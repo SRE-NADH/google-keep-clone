@@ -6,7 +6,7 @@ This project is a clone of Google Keep, a note-taking web application. It allows
 Node.js and npm should be installed on your machine. You can download and install them from https://nodejs.org/ .
 
 ## Local Setup Instructions
-1. Clone the Repository: git clone https://github.com/your-username/google-keep-clone.git
+1. Clone the Repository: git clone https://github.com/SRE-NADH/google-keep-clone.git
 
 2. Install Node Dependencies: `npm install`
 
