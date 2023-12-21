@@ -1,24 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./Components/Header/Header";
+import NotesContainer from "./Components/NotesContainer/NotesContainer";
+import { useState,useEffect } from "react";
+import CreateNote from "./Components/CreateNote/CreateNote";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <div  className="app" >
+      <Header />
+      <hr/>
+      <div className="create-note-container"><CreateNote/></div>
+     < NotesContainer />
+   </div>
   );
 }
 

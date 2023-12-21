@@ -1,0 +1,10 @@
+
+   .notes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 1rem;
+    margin-bottom: 20px;
+    width: 100%;
+   }

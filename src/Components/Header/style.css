@@ -1,0 +1,28 @@
+.header{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header img{
+  width: 1.7rem;
+}
+.search{
+    display: flex;
+    background-color: #EBECED;
+    padding: 10px;
+    width: 50%;
+    border-radius: 10px;
+    align-items: center;
+  }
+  .search>input{
+    width: 80%;
+    border: none;
+    background-color:#EBECED;
+    padding-inline:10px;
+    height: 30px;
+    font-size: 15px;
+  }
+  .search>input:focus{
+    outline: none;
+  }
