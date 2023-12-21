@@ -19,7 +19,7 @@ input {
 }
 
 
-
+/*  for mobile screen customization */
 @media screen and (max-width:445px){
   .note{
     width: 80vw;
@@ -30,3 +30,23 @@ input {
   }
 } 
 
+/* for medium device screen customization */
+@media screen  and (max-width:1025px){
+  .footer>button,.edit,.delete,.footer>p,.colors,.color-icon{
+    opacity: 1 !important;
+  }
+}
+
+/* for very small device screen customization */
+@media screen  and (max-width: 280px){
+  .note{
+   min-width: 180px !important;
+  }
+  .footer{
+    display: flex;
+    justify-content: center;
+  }
+  .footer>p{
+    display: none;
+  }
+}
