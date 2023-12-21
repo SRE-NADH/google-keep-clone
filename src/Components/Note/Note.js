@@ -43,6 +43,8 @@ const [isClick,setIsClick] = useState(false);
 
     // confirm delete before deleting note
     function handleDelete(e){
+        // cannot allow deleting while editing
+        if(edit) return;
         const Confirmed = window.confirm('Are you sure you want to delete this note?');
         if(Confirmed){
             deleteNote(item);
@@ -74,7 +76,7 @@ const [isClick,setIsClick] = useState(false);
                </div>  
             </div>
          
-          <div className="footer">
+          <div className="footer" style={(edit && edit.id===item.id?{color:"blue"}:{color:"black"}) }   >
              <p>{item.date}</p>
              <div className='edit'onClick={()=>{ setEditComponent(item)}} ><EditNoteIcon /></div>
              <div className='delete'onClick={handleDelete} ><DeleteOutlineIcon/></div>
