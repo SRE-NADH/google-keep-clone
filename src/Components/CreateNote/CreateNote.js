@@ -58,7 +58,7 @@ function handleData(){
      setTitle("");
      setColor("#EBECED");
  }
-  
+  // handling color
  function handleColor(e){
    setColor(e.target.getAttribute("data-color"));
    setIsClick(false);

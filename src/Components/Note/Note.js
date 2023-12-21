@@ -10,7 +10,7 @@ import { TodoContext } from '../../Context/todoContext';
 const Note = ({item})=>{
  
     const [noteTheme,SetNoteTheme] = useState("azure"); // keep track of theme of note
-    
+
     const {notes,swapNotes,deleteNote,setEditComponent,edit,updateNote} = useContext(TodoContext); 
     // for controlling colorpanel visibility
 const [isClick,setIsClick] = useState(false);
@@ -22,10 +22,10 @@ const [isClick,setIsClick] = useState(false);
         }
     },[edit]);  
 
-
-    function contrlDragStart(e,id){
+   
+     function contrlDragStart(e,id){
+        //keep track of drag element id
         e.dataTransfer.setData("parent",id);
-        
     }
 
     // drag and drop functionality
